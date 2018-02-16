@@ -1,6 +1,7 @@
 package com.example.android.popularmovies;
 
 import android.content.Context;
+import android.database.Cursor;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,6 +24,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     private String[][] mMovieData;
     private final MovieAdapterOnClickHandler mClickHandler;
     private Context mContext;
+    private Cursor mCursor;
 
     public interface MovieAdapterOnClickHandler {
         void onClick (String[] movieInfo);
@@ -83,4 +85,5 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
         mMovieData = movieData;
         notifyDataSetChanged();
     }
+
 }

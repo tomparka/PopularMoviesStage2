@@ -3,6 +3,7 @@ package com.example.android.popularmovies;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.database.Cursor;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,7 +17,13 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.example.android.popularmovies.data.MovieContract;
+import com.example.android.popularmovies.utils.NetworkUtils;
+import com.example.android.popularmovies.utils.OpenMovieJsonUtils;
+
 import java.net.URL;
+import java.util.ArrayList;
+import java.util.Arrays;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -50,12 +57,34 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         myAdapter = new MovieAdapter(this);
         mRecyclerView.setAdapter(myAdapter);
 
-        loadMovieData();
+        loadMovieData("MOST POPULAR");
     }
 
-    public void loadMovieData() {
+    public void loadMovieData(String apiRequestType) {
         showMovieDataView();
-        new MovieDataTask().execute("");
+        if (apiRequestType.equals("FAVORITES")) {
+            Cursor dbCursor = getContentResolver().query(MovieContract.MovieEntry.CONTENT_URI, null, null, null, null);
+            myAdapter.setMovieData(cursorTo2dArray(dbCursor));
+            dbCursor.close();
+        } else {
+            new MovieDataTask().execute(apiRequestType);
+        }
+    }
+
+    public String[][] cursorTo2dArray(Cursor cursor) {
+        if (cursor.getCount() < 1) {return null;}
+
+        ArrayList<String[]> arrayList = new ArrayList<String[]>();
+        while (cursor.moveToNext()) {
+            arrayList.add(new String[]{
+                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_TITLE)),
+                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_RELEASE_DATE)),
+                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_RATING)),
+                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_POSTER)),
+                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_PLOT))});
+        }
+
+        return arrayList.toArray(new String[arrayList.size()][5]);
     }
 
     private void showMovieDataView() {
@@ -85,12 +114,12 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
         }
 
         @Override
-        protected String[][] doInBackground(String... sortBy) {
-            if (sortBy.length == 0) {
+        protected String[][] doInBackground(String... apiRequestType) {
+            if (apiRequestType.length == 0) {
                 return null;
             }
 
-            URL movieRequestUrl = NetworkUtils.buildUrl(sortBy[0]);
+            URL movieRequestUrl = NetworkUtils.buildUrl(apiRequestType[0]);
 
             try {
                 String jsonMovieResponse = NetworkUtils
@@ -119,8 +148,10 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
             } else {
                 showErrorMessageView();
                 Log.d("onPostExecute", "errorMessageTriggered");
+//                ContentResolver resolver = getContentResolver();
+//                Cursor cursor = resolver.query(MovieContract.MovieEntry.CONTENT_URI, null, null, null, null);
+//                myAdapter.setMovieData(cursor);
             }
-
         }
     }
 
@@ -134,13 +165,13 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.sort_by_type) {
-            if (item.getTitle().equals("MOST POPULAR")) {
-                item.setTitle("HIGHEST RATED");
-                new MovieDataTask().execute("HIGHEST RATED");
-            } else {
-                item.setTitle("MOST POPULAR");
-                new MovieDataTask().execute("MOST POPULAR");
-            }
+            String currentTitle = (String) item.getTitle();
+            String[] sortTypeArray = getResources().getStringArray(R.array.sort_by_array);
+            int nextIndex =
+                    (Arrays.asList(sortTypeArray).indexOf(currentTitle) + 1) % sortTypeArray.length;
+            item.setTitle(sortTypeArray[nextIndex]);
+            loadMovieData(sortTypeArray[nextIndex]);
+
             return true;
         }
         return super.onOptionsItemSelected(item);

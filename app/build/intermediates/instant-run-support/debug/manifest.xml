@@ -37,6 +37,10 @@
         </activity>
 
         <provider
+            android:name="com.example.android.popularmovies.data.MovieProvider"
+            android:authorities="com.example.android.popularmovies"
+            android:exported="false" />
+        <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
             android:authorities="com.example.android.popularmovies.com.android.tools.fd.runtime.InstantRunContentProvider"
             android:multiprocess="true" />

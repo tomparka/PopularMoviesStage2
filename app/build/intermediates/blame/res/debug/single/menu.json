@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\menu\\detail_menu.xml",
+        "source": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\src\\main\\res\\menu\\detail_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\menu\\sort_menu.xml",
         "source": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\src\\main\\res\\menu\\sort_menu.xml"
     }

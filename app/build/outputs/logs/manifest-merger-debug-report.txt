@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-36:12
 	package
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
@@ -18,7 +18,7 @@ ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMovies
 	android:name
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:8:5-28:19
+ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:8:5-34:19
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\91cbc404b364893e3b5f2a857e0f8cb039b12962\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\c5b1312a1cecf3b8cfabbce30f3f74c8463759e9\output\AndroidManifest.xml:29:5-20
@@ -66,6 +66,14 @@ ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMovies
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:26:17-46
 	android:name
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:25:17-63
+provider#com.example.android.popularmovies.data.MovieProvider
+ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:29:9-32:39
+	android:authorities
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:31:13-68
+	android:exported
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:30:13-47
 uses-sdk
 INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:21:5-23:78
