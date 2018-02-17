@@ -20,16 +20,16 @@
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\layout\\abc_screen_simple.xml"
+        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
+        "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\layout\\abc_alert_dialog_material.xml"
     },
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\layout\\abc_alert_dialog_material.xml"
+        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
+        "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\layout\\abc_screen_simple.xml"
     },
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_chronometer.xml",
@@ -38,6 +38,10 @@
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\layout\\abc_search_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\trailer_item.xml",
+        "source": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\src\\main\\res\\layout\\trailer_item.xml"
     },
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_title_material.xml",

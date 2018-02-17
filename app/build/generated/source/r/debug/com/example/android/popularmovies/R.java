@@ -1905,19 +1905,20 @@ containing a value of this type.
         public static final int abc_textfield_search_material=0x7f020051;
         public static final int abc_vector_test=0x7f020052;
         public static final int ic_favorited_star_24px=0x7f020053;
-        public static final int ic_unfavorited_star_24px=0x7f020054;
-        public static final int notification_action_background=0x7f020055;
-        public static final int notification_bg=0x7f020056;
-        public static final int notification_bg_low=0x7f020057;
-        public static final int notification_bg_low_normal=0x7f020058;
-        public static final int notification_bg_low_pressed=0x7f020059;
-        public static final int notification_bg_normal=0x7f02005a;
-        public static final int notification_bg_normal_pressed=0x7f02005b;
-        public static final int notification_icon_background=0x7f02005c;
-        public static final int notification_template_icon_bg=0x7f02005f;
-        public static final int notification_template_icon_low_bg=0x7f020060;
-        public static final int notification_tile_bg=0x7f02005d;
-        public static final int notify_panel_notification_icon_bg=0x7f02005e;
+        public static final int ic_play_circle_outline_black_24dp=0x7f020054;
+        public static final int ic_unfavorited_star_24px=0x7f020055;
+        public static final int notification_action_background=0x7f020056;
+        public static final int notification_bg=0x7f020057;
+        public static final int notification_bg_low=0x7f020058;
+        public static final int notification_bg_low_normal=0x7f020059;
+        public static final int notification_bg_low_pressed=0x7f02005a;
+        public static final int notification_bg_normal=0x7f02005b;
+        public static final int notification_bg_normal_pressed=0x7f02005c;
+        public static final int notification_icon_background=0x7f02005d;
+        public static final int notification_template_icon_bg=0x7f020060;
+        public static final int notification_template_icon_low_bg=0x7f020061;
+        public static final int notification_tile_bg=0x7f02005e;
+        public static final int notify_panel_notification_icon_bg=0x7f02005f;
     }
     public static final class id {
         public static final int action0=0x7f0c0065;
@@ -1931,7 +1932,7 @@ containing a value of this type.
         public static final int action_container=0x7f0c0062;
         public static final int action_context_bar=0x7f0c0049;
         public static final int action_divider=0x7f0c0069;
-        public static final int action_favorite=0x7f0c0079;
+        public static final int action_favorite=0x7f0c007b;
         public static final int action_image=0x7f0c0063;
         public static final int action_menu_divider=0x7f0c0002;
         public static final int action_menu_presenter=0x7f0c0003;
@@ -1974,6 +1975,7 @@ containing a value of this type.
         public static final int icon_group=0x7f0c0073;
         public static final int ifRoom=0x7f0c0020;
         public static final int image=0x7f0c002a;
+        public static final int imageView=0x7f0c0079;
         public static final int info=0x7f0c006f;
         public static final int item_touch_helper_previous_elevation=0x7f0c0005;
         public static final int iv_movie_poster=0x7f0c0061;
@@ -2018,7 +2020,7 @@ containing a value of this type.
         public static final int showCustom=0x7f0c0010;
         public static final int showHome=0x7f0c0011;
         public static final int showTitle=0x7f0c0012;
-        public static final int sort_by_type=0x7f0c007a;
+        public static final int sort_by_type=0x7f0c007c;
         public static final int spacer=0x7f0c0030;
         public static final int split_action_bar=0x7f0c0008;
         public static final int src_atop=0x7f0c0017;
@@ -2039,6 +2041,7 @@ containing a value of this type.
         public static final int top=0x7f0c0024;
         public static final int topPanel=0x7f0c003a;
         public static final int tv_error_message_display=0x7f0c0058;
+        public static final int tv_trailer=0x7f0c007a;
         public static final int up=0x7f0c0009;
         public static final int useLogo=0x7f0c0013;
         public static final int withText=0x7f0c0022;
@@ -2100,6 +2103,7 @@ containing a value of this type.
         public static final int select_dialog_multichoice_material=0x7f04002e;
         public static final int select_dialog_singlechoice_material=0x7f04002f;
         public static final int support_simple_spinner_dropdown_item=0x7f040030;
+        public static final int trailer_item=0x7f040031;
     }
     public static final class menu {
         public static final int detail_menu=0x7f0e0000;

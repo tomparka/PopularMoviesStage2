@@ -47,8 +47,6 @@ public final class NetworkUtils {
 
     public static URL buildUrl(String apiRequestType, String movieId) {
 
-        Log.d(TAG, "passed in string is " +apiRequestType +": sort by most popular trigger is " + sortByPopTrigger);
-        Log.d(TAG, "equals method: " + apiRequestType.equals(sortByPopTrigger) + " == method: " + (apiRequestType == "MOST_POPULAR"));
         Uri.Builder uriBuilder = Uri.parse(MOVIE_BASE_URL).buildUpon();
 
         switch(apiRequestType) {

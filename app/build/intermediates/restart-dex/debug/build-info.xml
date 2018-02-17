@@ -2,74 +2,47 @@
 <instant-run
     abi="x86"
     api-level="26"
-    build-mode="FULL"
+    build-mode="COLD"
     density="420dpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1518821601494"
+    timestamp="1518903265936"
     token="3226772775391437172"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="516" />
+        duration="583" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="16" />
+        duration="14" />
     <task
         name="verifier"
-        duration="18" />
+        duration="6" />
 
     <artifact
         location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
         type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1518821601494"
+        timestamp="1518902285765"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
+            location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
             location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
         <artifact
             location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
@@ -83,9 +56,6 @@
             location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-            type="SPLIT" />
-        <artifact
             location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
@@ -97,9 +67,30 @@
         <artifact
             location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1518902387413"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1518902870584"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1518903265936"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
     </build>
 
 </instant-run>

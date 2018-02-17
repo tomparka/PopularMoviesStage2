@@ -7,6 +7,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.net.HttpURLConnection;
+import java.util.ArrayList;
 
 /**
  * Created by tp293 on 10/10/2017.
@@ -42,6 +43,7 @@ public final class OpenMovieJsonUtils {
             String rating;
             String posterPath;
             String plot;
+            String id;
 
             /* Get the JSON object representing a movie */
             JSONObject movieInfo = movieArray.getJSONObject(i);
@@ -54,12 +56,75 @@ public final class OpenMovieJsonUtils {
             String posterFullPath = BASEPOSTERURL + posterPath;
 
             plot = movieInfo.getString("overview");
+            id = movieInfo.getString("id");
 
-            String[] movieInfoArray = {title, releaseDate, rating, posterFullPath, plot};
+            String[] movieInfoArray = {title, releaseDate, rating, posterFullPath, plot, id};
             parsedMovieData[i] = movieInfoArray;
         }
 
         return parsedMovieData;
+    }
+
+    public static String[] getMovieTrailerStringsFromJson(Context context, String movieTrailerJsonString)
+            throws JSONException {
+
+        final String YOUTUBE = "YouTube";
+        final String BASEYOUTUBEURL = "https://www.youtube.com/watch?v=";
+        /* Movie info found in Array called "results" */
+        final String OMJ_RESULTS = "results";
+
+        /* String array to hold each movie's info String */
+        ArrayList<String> movieTrailerData = new ArrayList<>();
+
+        JSONObject movieTrailerJson = new JSONObject(movieTrailerJsonString);
+        JSONArray movieTrailersArray = movieTrailerJson.getJSONArray(OMJ_RESULTS);
+
+        for (int i = 0; i < movieTrailersArray.length(); i++) {
+
+            String key;
+
+            /* Get the JSON object representing a movie */
+            JSONObject videoItem = movieTrailersArray.getJSONObject(i);
+
+            if (videoItem.getString("site").equals(YOUTUBE)) {
+                key = videoItem.getString("key");
+                movieTrailerData.add(BASEYOUTUBEURL + key);
+            }
+        }
+
+        return movieTrailerData.toArray(new String[movieTrailerData.size()]);
+    }
+
+
+    public static String[] getMovieReviewStringsFromJson(Context context, String movieReviewJsonString)
+            throws JSONException {
+
+        /* Movie info found in Array called "results" */
+        final String OMJ_RESULTS = "results";
+
+        /* String array to hold each movie's info String */
+        String[] movieReviewData = null;
+
+        JSONObject movieReviewJson = new JSONObject(movieReviewJsonString);
+        JSONArray movieReviewsArray = movieReviewJson.getJSONArray(OMJ_RESULTS);
+
+        movieReviewData = new String[movieReviewsArray.length()];
+
+        for (int i = 0; i < movieReviewsArray.length(); i++) {
+
+            String author;
+            String content;
+
+            /* Get the JSON object representing a movie */
+            JSONObject reviewItem = movieReviewsArray.getJSONObject(i);
+
+            author = reviewItem.getString("author");
+            content = reviewItem.getString("content");
+
+            movieReviewData[i] = content;
+        }
+
+        return movieReviewData;
     }
 
 }
