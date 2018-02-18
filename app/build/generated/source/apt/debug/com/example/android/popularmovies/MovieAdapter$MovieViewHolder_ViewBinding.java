@@ -5,6 +5,9 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.android.popularmovies.adapters.MovieAdapter;
+
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
 import java.lang.IllegalStateException;

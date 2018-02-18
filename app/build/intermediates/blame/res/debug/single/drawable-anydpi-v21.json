@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    },
+    {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_unfavorited_star_24px.xml",
         "source": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_unfavorited_star_24px.xml"
     },
@@ -10,5 +14,9 @@
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_play_circle_outline_black_24dp.xml",
         "source": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_play_circle_outline_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     }
 ]

@@ -33,8 +33,9 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
 
     String[] mMovieArray;
 
-    ProgressBar mProgressBar;
+    ContentResolver contentResolver;
 
+    ProgressBar mProgressBar;
     ImageView mPosterImage;
     TextView mMovieTitle;
     TextView mMovieReleaseDate;
@@ -50,7 +51,7 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
 
         //TODO: check if movie is in favorites database and display appropriate favorites drawable
         // checks whether movie title is already in the database
-
+        contentResolver = getContentResolver();
         mProgressBar = (ProgressBar) findViewById(R.id.pb_loading_indicator);
 
         mPosterImage = (ImageView) findViewById(R.id.detail_poster);
@@ -79,16 +80,22 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
     }
 
     public void addTrailersToLayout(String[] trailers) {
-        //TODO: add click listener with intent to open video in youtube
 
         LayoutInflater inflater = getLayoutInflater();
         ViewGroup linearLayout = (ViewGroup) findViewById(R.id.detail_linear_layout);
         for (int i = 0; i < trailers.length; i++) {
             View view = inflater.inflate(R.layout.trailer_item, linearLayout, false);
+            ((TextView) view.findViewById(R.id.tv_trailer)).setText("Movie Trailer " + Integer.toString(i + 1));
             view.setOnClickListener(this);
             view.setTag(trailers[i]);
             linearLayout.addView(view);
         }
+    }
+
+    public void openReviewsActivity(View view) {
+        Intent intent = new Intent(this, MovieReviewsActivity.class);
+        intent.putExtra(Intent.EXTRA_TEXT, mMovieId);
+        startActivity(intent);
     }
 
     @Override
@@ -148,7 +155,7 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.detail_menu, menu);
 
-        if (getContentResolver().query(
+        if (contentResolver.query(
                 MovieContract.MovieEntry.CONTENT_URI,
                 new String[]{MovieContract.MovieEntry.COLUMN_TITLE},
                 MovieContract.MovieEntry.COLUMN_TITLE + "='" + mMovieArray[0] +"'",
@@ -179,7 +186,7 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
                     contentValues.put(MovieContract.MovieEntry.COLUMN_PLOT, mMoviePlot.getText().toString());
                     contentValues.put(MovieContract.MovieEntry.COLUMN_POSTER, mPosterImageUrl);
                     contentValues.put(MovieContract.MovieEntry.COLUMN_RELEASE_DATE, mMovieReleaseDate.getText().toString());
-                    contentValues.put(MovieContract.MovieEntry.COLUMN_MOVIE_ID, mMovieArray[5]);
+                    contentValues.put(MovieContract.MovieEntry.COLUMN_MOVIE_ID, mMovieId);
                     //contentValues.put(MovieContract.MovieEntry.COLUMN_REVIEWS, );
                     //contentValues.put(MovieContract.MovieEntry.COLUMN_TRAILER, );
 
