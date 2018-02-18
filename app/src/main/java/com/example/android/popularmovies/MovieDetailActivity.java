@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.DropBoxManager;
 import android.support.v4.content.res.ResourcesCompat;
@@ -28,7 +29,7 @@ import com.squareup.picasso.Picasso;
 
 import java.net.URL;
 
-public class MovieDetailActivity extends AppCompatActivity {
+public class MovieDetailActivity extends AppCompatActivity implements View.OnClickListener{
 
     String[] mMovieArray;
 
@@ -48,6 +49,7 @@ public class MovieDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_movie_detail);
 
         //TODO: check if movie is in favorites database and display appropriate favorites drawable
+        // checks whether movie title is already in the database
 
         mProgressBar = (ProgressBar) findViewById(R.id.pb_loading_indicator);
 
@@ -83,8 +85,18 @@ public class MovieDetailActivity extends AppCompatActivity {
         ViewGroup linearLayout = (ViewGroup) findViewById(R.id.detail_linear_layout);
         for (int i = 0; i < trailers.length; i++) {
             View view = inflater.inflate(R.layout.trailer_item, linearLayout, false);
+            view.setOnClickListener(this);
+            view.setTag(trailers[i]);
             linearLayout.addView(view);
         }
+    }
+
+    @Override
+    public void onClick(View view) {
+        String url = (String) view.getTag();
+        Intent youtubeIntent = new Intent(Intent.ACTION_VIEW);
+        youtubeIntent.setData(Uri.parse(url));
+        startActivity(youtubeIntent);
     }
 
     public class MovieTrailerTask extends AsyncTask<String, Void, String[]> {
@@ -135,6 +147,17 @@ public class MovieDetailActivity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.detail_menu, menu);
+
+        if (getContentResolver().query(
+                MovieContract.MovieEntry.CONTENT_URI,
+                new String[]{MovieContract.MovieEntry.COLUMN_TITLE},
+                MovieContract.MovieEntry.COLUMN_TITLE + "='" + mMovieArray[0] +"'",
+                null, null).getCount() > 0 ) {
+
+            MenuItem starItem = menu.findItem(R.id.action_favorite);
+            starItem.setIcon(R.drawable.ic_favorited_star_24px);
+        }
+
         return super.onCreateOptionsMenu(menu);
     }
 
@@ -143,7 +166,7 @@ public class MovieDetailActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.action_favorite:
                 ContentResolver resolver = getContentResolver();
-                Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show();
+
 
                 Drawable.ConstantState currentIconConstantState = item.getIcon().getConstantState();
                 Drawable.ConstantState resourceConstantState = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_unfavorited_star_24px, null).getConstantState();
@@ -156,11 +179,12 @@ public class MovieDetailActivity extends AppCompatActivity {
                     contentValues.put(MovieContract.MovieEntry.COLUMN_PLOT, mMoviePlot.getText().toString());
                     contentValues.put(MovieContract.MovieEntry.COLUMN_POSTER, mPosterImageUrl);
                     contentValues.put(MovieContract.MovieEntry.COLUMN_RELEASE_DATE, mMovieReleaseDate.getText().toString());
+                    contentValues.put(MovieContract.MovieEntry.COLUMN_MOVIE_ID, mMovieArray[5]);
                     //contentValues.put(MovieContract.MovieEntry.COLUMN_REVIEWS, );
                     //contentValues.put(MovieContract.MovieEntry.COLUMN_TRAILER, );
 
-
                     resolver.insert(MovieContract.MovieEntry.CONTENT_URI, contentValues);
+                    Toast.makeText(this, "Added to favorites", Toast.LENGTH_SHORT).show();
                 } else {
                     item.setIcon(R.drawable.ic_unfavorited_star_24px);
                     String currentMovieTitle = mMovieTitle.getText().toString();

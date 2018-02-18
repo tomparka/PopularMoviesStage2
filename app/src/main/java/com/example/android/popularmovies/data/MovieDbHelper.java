@@ -30,6 +30,7 @@ public class MovieDbHelper extends SQLiteOpenHelper {
                         MovieContract.MovieEntry.COLUMN_RATING + " TEXT, " +
                         MovieContract.MovieEntry.COLUMN_RELEASE_DATE + " TEXT, " +
                         MovieContract.MovieEntry.COLUMN_PLOT + " TEXT, " +
+                        MovieContract.MovieEntry.COLUMN_MOVIE_ID + " TEXT, " +
                         MovieContract.MovieEntry.COLUMN_TRAILER + " TEXT, " +
                         MovieContract.MovieEntry.COLUMN_REVIEWS + " TEXT, " +
 

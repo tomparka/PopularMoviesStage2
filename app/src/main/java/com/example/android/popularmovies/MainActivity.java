@@ -81,7 +81,8 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
                     cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_RELEASE_DATE)),
                     cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_RATING)),
                     cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_POSTER)),
-                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_PLOT))});
+                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_PLOT)),
+                    cursor.getString(cursor.getColumnIndex(MovieContract.MovieEntry.COLUMN_MOVIE_ID))});
         }
 
         return arrayList.toArray(new String[arrayList.size()][5]);

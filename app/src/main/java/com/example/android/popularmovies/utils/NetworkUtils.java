@@ -34,7 +34,6 @@ public final class NetworkUtils {
     private static final String requestVideos = "videos";
     private static final String requestReviews = "reviews";
 
-
     // /movie/{id}/videos
     // /movie/{id}/reviews
 
