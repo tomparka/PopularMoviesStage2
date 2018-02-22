@@ -19,7 +19,6 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
 
     private Context mContext;
     private String[] mReviews;
-    private int mReviewNumber = 0;
 
     @Override
     public ReviewViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
@@ -33,7 +32,6 @@ public class ReviewAdapter extends RecyclerView.Adapter<ReviewAdapter.ReviewView
 
     @Override
     public void onBindViewHolder(ReviewViewHolder holder, int position) {
-        mReviewNumber ++;
         holder.reviewTitleTextView.setText("Review " + (position + 1));
         holder.reviewTextView.setText(mReviews[position]);
     }

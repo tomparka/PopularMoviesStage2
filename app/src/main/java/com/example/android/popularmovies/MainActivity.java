@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
 
     private MovieAdapter myAdapter;
     private GridLayoutManager movieLayoutManager;
+    private String sortByType;
+
+    private final String KEY_SORT_BY = "KEY_SORT_BY";
 
     @BindView(R.id.rv_movie_posters) RecyclerView mRecyclerView;
     @BindView(R.id.tv_error_message_display) TextView mErrorMessageDisplay;
@@ -57,8 +60,6 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
 
         myAdapter = new MovieAdapter(this);
         mRecyclerView.setAdapter(myAdapter);
-
-        loadMovieData("MOST POPULAR");
     }
 
     public void loadMovieData(String apiRequestType) {
@@ -172,10 +173,23 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
             int nextIndex =
                     (Arrays.asList(sortTypeArray).indexOf(currentTitle) + 1) % sortTypeArray.length;
             item.setTitle(sortTypeArray[nextIndex]);
+            sortByType = sortTypeArray[nextIndex];
             loadMovieData(sortTypeArray[nextIndex]);
 
             return true;
         }
         return super.onOptionsItemSelected(item);
     }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        if ( sortByType != null) {
+            loadMovieData(sortByType);
+        } else {
+            loadMovieData("MOST POPULAR");
+        }
+    }
+
 }

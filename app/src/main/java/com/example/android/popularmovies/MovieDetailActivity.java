@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
-import android.os.DropBoxManager;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -17,7 +16,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -31,27 +29,26 @@ import java.net.URL;
 
 public class MovieDetailActivity extends AppCompatActivity implements View.OnClickListener{
 
-    String[] mMovieArray;
+    private String[] mMovieArray;
 
-    ContentResolver contentResolver;
+    private ProgressBar mProgressBar;
+    private ImageView mPosterImage;
+    private TextView mMovieTitle;
+    private TextView mMovieReleaseDate;
+    private TextView mMovieRating;
+    private TextView mMoviePlot;
+    private String mPosterImageUrl;
+    private String mMovieId;
 
-    ProgressBar mProgressBar;
-    ImageView mPosterImage;
-    TextView mMovieTitle;
-    TextView mMovieReleaseDate;
-    TextView mMovieRating;
-    TextView mMoviePlot;
-    String mPosterImageUrl;
-    String mMovieId;
+    /* KEYS USED TO PASS DATA IN SAVEDINSTANCESTATE */
+    // private final String KEY_MOVIE_ARRAY_DATA = "KEY_MOVIE_ARRAY_DATA";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_detail);
-
-        //TODO: check if movie is in favorites database and display appropriate favorites drawable
-        // checks whether movie title is already in the database
-        contentResolver = getContentResolver();
+        Log.d("MovieDetailActivity", "OnCreate method called ......." );
+        
         mProgressBar = (ProgressBar) findViewById(R.id.pb_loading_indicator);
 
         mPosterImage = (ImageView) findViewById(R.id.detail_poster);
@@ -61,9 +58,12 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
         mMoviePlot = (TextView) findViewById(R.id.detail_plot);
 
         Intent intentThatStartedThisActivity = getIntent();
+        Log.d("MOVIE DETAIL ACTIVITY", "SAVEINSTANCESTATE IS NULL = " + (savedInstanceState == null));
 
         if (intentThatStartedThisActivity != null) {
             if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_TEXT)) {
+                Log.d("MOVIE DETAIL ACTIVITY", "INTENT WAS USED TO POPULATE DATA.........");
+
                 mMovieArray = intentThatStartedThisActivity.getStringArrayExtra(Intent.EXTRA_TEXT);
 
                 mMovieTitle.setText(mMovieArray[0]);
@@ -75,6 +75,20 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
                 mMovieId = mMovieArray[5];
             }
         }
+
+//        else if (savedInstanceState != null) {
+//            Log.d("MOVIE DETAIL ACTIVITY", "ONSAVEINSTANCESTATE WAS USED TO POPULATE DATA");
+//            mMovieArray = savedInstanceState.getStringArray(KEY_MOVIE_ARRAY_DATA);
+//
+//            mMovieTitle.setText(mMovieArray[0]);
+//            mMovieReleaseDate.setText(mMovieArray[1]);
+//            mMovieRating.setText(mMovieArray[2]);
+//            mPosterImageUrl = mMovieArray[3];
+//            Picasso.with(this).load(mPosterImageUrl).into(mPosterImage);
+//            mMoviePlot.setText(mMovieArray[4]);
+//            mMovieId = mMovieArray[5];
+//
+//        }
 
         new MovieTrailerTask().execute("VIDEOS");
     }
@@ -155,7 +169,7 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.detail_menu, menu);
 
-        if (contentResolver.query(
+        if (getContentResolver().query(
                 MovieContract.MovieEntry.CONTENT_URI,
                 new String[]{MovieContract.MovieEntry.COLUMN_TITLE},
                 MovieContract.MovieEntry.COLUMN_TITLE + "='" + mMovieArray[0] +"'",
@@ -173,7 +187,6 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
         switch (item.getItemId()) {
             case R.id.action_favorite:
                 ContentResolver resolver = getContentResolver();
-
 
                 Drawable.ConstantState currentIconConstantState = item.getIcon().getConstantState();
                 Drawable.ConstantState resourceConstantState = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_unfavorited_star_24px, null).getConstantState();
@@ -195,11 +208,18 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
                 } else {
                     item.setIcon(R.drawable.ic_unfavorited_star_24px);
                     String currentMovieTitle = mMovieTitle.getText().toString();
-                    int rowsDeleted = resolver.delete(MovieContract.MovieEntry.CONTENT_URI, MovieContract.MovieEntry.COLUMN_TITLE + "=?" , new String[] {currentMovieTitle});
-                    Toast.makeText(this, "Rows deleted: " + Integer.toString(rowsDeleted), Toast.LENGTH_SHORT).show();
+                    resolver.delete(MovieContract.MovieEntry.CONTENT_URI, MovieContract.MovieEntry.COLUMN_TITLE + "=?" , new String[] {currentMovieTitle});
+                    Toast.makeText(this, "Removed from favorites", Toast.LENGTH_SHORT).show();
                 }
             default:
                 return super.onOptionsItemSelected(item);
         }
     }
+
+//    @Override
+//    public void onSaveInstanceState(Bundle savedInstanceState) {
+//        Log.d("MOVIE DETAIL ACTIVITY", "ONSAVEINSTANCESTATE CALLED...........");
+//        savedInstanceState.putStringArray(KEY_MOVIE_ARRAY_DATA, mMovieArray);
+//        super.onSaveInstanceState(savedInstanceState);
+//    }
 }

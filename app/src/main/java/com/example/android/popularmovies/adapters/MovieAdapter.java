@@ -23,7 +23,6 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.MovieViewHol
     private String[][] mMovieData;
     private final MovieAdapterOnClickHandler mClickHandler;
     private Context mContext;
-    private Cursor mCursor;
 
     public interface MovieAdapterOnClickHandler {
         void onClick (String[] movieInfo);

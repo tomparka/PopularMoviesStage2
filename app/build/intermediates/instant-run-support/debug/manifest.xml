@@ -21,7 +21,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.android.popularmovies.MainActivity" >
+        <activity
+            android:name="com.example.android.popularmovies.MainActivity"
+            android:launchMode="singleTop" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,6 +32,7 @@
         </activity>
         <activity
             android:name="com.example.android.popularmovies.MovieDetailActivity"
+            android:launchMode="singleTop"
             android:parentActivityName="com.example.android.popularmovies.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
