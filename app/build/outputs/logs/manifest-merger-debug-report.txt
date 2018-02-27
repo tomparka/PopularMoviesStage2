@@ -1,44 +1,76 @@
 -- Merging decision tree log ---
 manifest
 ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\36c9fddd9cb4ac2b2b655879958da5b7\AndroidManifest.xml:17:1-28:12
+MERGED from [com.jakewharton:butterknife:8.4.0] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\butterknife-8.4.0.aar\0353a40346847c937cc63fa377a930c6\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\76bbf7bd5bed711328ca63bca52d9748\AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\251fc12ca04ef0e0bc58d38b90a5ade3\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\998e407eb762398ddaf17634645b9d05\AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\fda28d17d8228c75c38ec3b0aa12741e\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\cbf910ed059381955a09ecc00fc8efbf\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\4af79f64535bbeb768b4251cdb8d02f3\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\d7872187c593a49e825c92d80764f0ae\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\3da07037bd7f715c59e37f8f915d0378\AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\d0feb4ddfb058bd30aba774d25853db8\AndroidManifest.xml:17:1-31:12
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:3:5-48
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
+		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:1-46:12
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:2:11-69
-	android:versionCode
-		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:5:22-64
 application
 ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:7:5-44:19
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\91cbc404b364893e3b5f2a857e0f8cb039b12962\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\c5b1312a1cecf3b8cfabbce30f3f74c8463759e9\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\ba6a497bcbf12a6db27c3b2fa4df0c1d93ba93bc\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\088e6dbf493bdf8fd85a05aac0555442964a69fd\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\b64c2dae7883c96dc6e99fa9ef04d67f0d2649e2\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\2f14dbc83ec9894ae5dfb98f6067984e51772b2d\output\AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fe7abc1d8ab3a56338663c07cc9b8751740311b7\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\cb72da25cab45f011198d2e494da35f6bbe9ad71\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tp293\.android\build-cache\2478d457dc902074e60d66e0ee1a10eead21410b\output\AndroidManifest.xml:9:5-20
-	android:label
-		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:10:9-41
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\36c9fddd9cb4ac2b2b655879958da5b7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\36c9fddd9cb4ac2b2b655879958da5b7\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\76bbf7bd5bed711328ca63bca52d9748\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\76bbf7bd5bed711328ca63bca52d9748\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\251fc12ca04ef0e0bc58d38b90a5ade3\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\251fc12ca04ef0e0bc58d38b90a5ade3\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\998e407eb762398ddaf17634645b9d05\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\998e407eb762398ddaf17634645b9d05\AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\fda28d17d8228c75c38ec3b0aa12741e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\fda28d17d8228c75c38ec3b0aa12741e\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\cbf910ed059381955a09ecc00fc8efbf\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\cbf910ed059381955a09ecc00fc8efbf\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\4af79f64535bbeb768b4251cdb8d02f3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\4af79f64535bbeb768b4251cdb8d02f3\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\d7872187c593a49e825c92d80764f0ae\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\d7872187c593a49e825c92d80764f0ae\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\3da07037bd7f715c59e37f8f915d0378\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\3da07037bd7f715c59e37f8f915d0378\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\d0feb4ddfb058bd30aba774d25853db8\AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\d0feb4ddfb058bd30aba774d25853db8\AndroidManifest.xml:25:5-29:19
 	android:supportsRtl
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:12:9-35
+	android:label
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:11:9-54
-	android:allowBackup
-		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:8:9-35
 	android:icon
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:9:9-43
+	android:allowBackup
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.example.android.popularmovies.MainActivity
@@ -87,38 +119,65 @@ ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMovies
 		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml:40:13-47
 uses-sdk
 INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\91cbc404b364893e3b5f2a857e0f8cb039b12962\output\AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\c5b1312a1cecf3b8cfabbce30f3f74c8463759e9\output\AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\ba6a497bcbf12a6db27c3b2fa4df0c1d93ba93bc\output\AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\088e6dbf493bdf8fd85a05aac0555442964a69fd\output\AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\b64c2dae7883c96dc6e99fa9ef04d67f0d2649e2\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\2f14dbc83ec9894ae5dfb98f6067984e51772b2d\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\3123dab458f1de7c1c345712fa0af137a6a76ac6\output\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fe7abc1d8ab3a56338663c07cc9b8751740311b7\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\cb72da25cab45f011198d2e494da35f6bbe9ad71\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.jakewharton:butterknife:8.4.0] C:\Users\tp293\.android\build-cache\2e95dfb4143954cf72003a1be9657d2bc9b766c1\output\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tp293\.android\build-cache\2478d457dc902074e60d66e0ee1a10eead21410b\output\AndroidManifest.xml:5:5-7:41
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\36c9fddd9cb4ac2b2b655879958da5b7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\36c9fddd9cb4ac2b2b655879958da5b7\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.4.0] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\butterknife-8.4.0.aar\0353a40346847c937cc63fa377a930c6\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.4.0] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\butterknife-8.4.0.aar\0353a40346847c937cc63fa377a930c6\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\76bbf7bd5bed711328ca63bca52d9748\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.0.2.aar\76bbf7bd5bed711328ca63bca52d9748\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\251fc12ca04ef0e0bc58d38b90a5ade3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\251fc12ca04ef0e0bc58d38b90a5ade3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\998e407eb762398ddaf17634645b9d05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\998e407eb762398ddaf17634645b9d05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\fda28d17d8228c75c38ec3b0aa12741e\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\fda28d17d8228c75c38ec3b0aa12741e\AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\cbf910ed059381955a09ecc00fc8efbf\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\cbf910ed059381955a09ecc00fc8efbf\AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\4af79f64535bbeb768b4251cdb8d02f3\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\4af79f64535bbeb768b4251cdb8d02f3\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\d7872187c593a49e825c92d80764f0ae\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\d7872187c593a49e825c92d80764f0ae\AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\3da07037bd7f715c59e37f8f915d0378\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\3da07037bd7f715c59e37f8f915d0378\AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\d0feb4ddfb058bd30aba774d25853db8\AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\d0feb4ddfb058bd30aba774d25853db8\AndroidManifest.xml:21:5-23:58
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\tp293\OneDrive\Documents\Udacity\01 - Projects\PopularMoviesS02\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\91cbc404b364893e3b5f2a857e0f8cb039b12962\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\c5b1312a1cecf3b8cfabbce30f3f74c8463759e9\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\ba6a497bcbf12a6db27c3b2fa4df0c1d93ba93bc\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\088e6dbf493bdf8fd85a05aac0555442964a69fd\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\b64c2dae7883c96dc6e99fa9ef04d67f0d2649e2\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\2f14dbc83ec9894ae5dfb98f6067984e51772b2d\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\3123dab458f1de7c1c345712fa0af137a6a76ac6\output\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fe7abc1d8ab3a56338663c07cc9b8751740311b7\output\AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\cb72da25cab45f011198d2e494da35f6bbe9ad71\output\AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\36c9fddd9cb4ac2b2b655879958da5b7\AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-26.0.0-beta1.aar\36c9fddd9cb4ac2b2b655879958da5b7\AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\251fc12ca04ef0e0bc58d38b90a5ade3\AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.0.0-beta1.aar\251fc12ca04ef0e0bc58d38b90a5ade3\AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\998e407eb762398ddaf17634645b9d05\AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-26.0.0-beta1.aar\998e407eb762398ddaf17634645b9d05\AndroidManifest.xml:23:9-25:44
+MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\fda28d17d8228c75c38ec3b0aa12741e\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-v4:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-v4-26.0.0-beta1.aar\fda28d17d8228c75c38ec3b0aa12741e\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\cbf910ed059381955a09ecc00fc8efbf\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-fragment:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-fragment-26.0.0-beta1.aar\cbf910ed059381955a09ecc00fc8efbf\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\4af79f64535bbeb768b4251cdb8d02f3\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-ui:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.0.0-beta1.aar\4af79f64535bbeb768b4251cdb8d02f3\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\d7872187c593a49e825c92d80764f0ae\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-media-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-media-compat-26.0.0-beta1.aar\d7872187c593a49e825c92d80764f0ae\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\3da07037bd7f715c59e37f8f915d0378\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-core-utils:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-core-utils-26.0.0-beta1.aar\3da07037bd7f715c59e37f8f915d0378\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\d0feb4ddfb058bd30aba774d25853db8\AndroidManifest.xml:26:9-28:44
+MERGED from [com.android.support:support-compat:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\support-compat-26.0.0-beta1.aar\d0feb4ddfb058bd30aba774d25853db8\AndroidManifest.xml:26:9-28:44
 	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:28:13-41
 	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] C:\Users\tp293\.android\build-cache\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\output\AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:appcompat-v7:26.0.0-beta1] C:\Users\tp293\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.0.0-beta1.aar\acd81deb9cec68f0ef8e73e9777a688d\AndroidManifest.xml:27:13-51

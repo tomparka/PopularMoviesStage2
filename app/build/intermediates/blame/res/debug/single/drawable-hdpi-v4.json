@@ -48,10 +48,6 @@
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable-hdpi-v4\\abc_list_selector_disabled_holo_light.9.png"
     },
     {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility_off.png",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable-hdpi-v4\\design_ic_visibility_off.png"
-    },
-    {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable-hdpi-v4\\abc_ic_star_black_48dp.png"
     },
@@ -146,10 +142,6 @@
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable-hdpi-v4\\abc_list_pressed_holo_light.9.png"
-    },
-    {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\design_ic_visibility.png",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable-hdpi-v4\\design_ic_visibility.png"
     },
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_scrubber_primary_mtrl_alpha.9.png",

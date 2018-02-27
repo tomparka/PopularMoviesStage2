@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v16\\values-v16.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\tp293\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.0.0-beta1.aar\\acd81deb9cec68f0ef8e73e9777a688d\\res\\values-v16\\values-v16.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endLines": "2,6",
+                        "endColumns": "65,12",
+                        "endOffsets": "116,289"
+                    }
+                }
+            ]
+        }
+    ]
+}

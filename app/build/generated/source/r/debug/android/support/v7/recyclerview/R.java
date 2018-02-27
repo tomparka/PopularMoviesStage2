@@ -8,39 +8,57 @@ package android.support.v7.recyclerview;
 
 public final class R {
     public static final class attr {
-        public static final int fastScrollEnabled = 0x7f0100e8;
-        public static final int fastScrollHorizontalThumbDrawable = 0x7f0100eb;
-        public static final int fastScrollHorizontalTrackDrawable = 0x7f0100ec;
-        public static final int fastScrollVerticalThumbDrawable = 0x7f0100e9;
-        public static final int fastScrollVerticalTrackDrawable = 0x7f0100ea;
-        public static final int layoutManager = 0x7f0100e4;
-        public static final int reverseLayout = 0x7f0100e6;
-        public static final int spanCount = 0x7f0100e5;
-        public static final int stackFromEnd = 0x7f0100e7;
+        public static final int fastScrollEnabled = 0x7f03006f;
+        public static final int fastScrollHorizontalThumbDrawable = 0x7f030070;
+        public static final int fastScrollHorizontalTrackDrawable = 0x7f030071;
+        public static final int fastScrollVerticalThumbDrawable = 0x7f030072;
+        public static final int fastScrollVerticalTrackDrawable = 0x7f030073;
+        public static final int font = 0x7f030074;
+        public static final int fontProviderAuthority = 0x7f030075;
+        public static final int fontProviderCerts = 0x7f030076;
+        public static final int fontProviderPackage = 0x7f030077;
+        public static final int fontProviderQuery = 0x7f030078;
+        public static final int fontStyle = 0x7f030079;
+        public static final int fontWeight = 0x7f03007a;
+        public static final int layoutManager = 0x7f03008b;
+        public static final int reverseLayout = 0x7f0300df;
+        public static final int spanCount = 0x7f0300eb;
+        public static final int stackFromEnd = 0x7f0300f1;
     }
     public static final class dimen {
-        public static final int fastscroll_default_thickness = 0x7f070050;
-        public static final int fastscroll_margin = 0x7f070051;
-        public static final int fastscroll_minimum_range = 0x7f070052;
-        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f07005a;
-        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f07005b;
-        public static final int item_touch_helper_swipe_escape_velocity = 0x7f07005c;
+        public static final int fastscroll_default_thickness = 0x7f06004c;
+        public static final int fastscroll_margin = 0x7f06004d;
+        public static final int fastscroll_minimum_range = 0x7f06004e;
+        public static final int item_touch_helper_max_drag_scroll_per_frame = 0x7f060056;
+        public static final int item_touch_helper_swipe_escape_max_velocity = 0x7f060057;
+        public static final int item_touch_helper_swipe_escape_velocity = 0x7f060058;
     }
     public static final class id {
-        public static final int item_touch_helper_previous_elevation = 0x7f0c0005;
+        public static final int italic = 0x7f080042;
+        public static final int item_touch_helper_previous_elevation = 0x7f080043;
+        public static final int normal = 0x7f080050;
     }
     public static final class styleable {
-        public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f0100e4, 0x7f0100e5, 0x7f0100e6, 0x7f0100e7, 0x7f0100e8, 0x7f0100e9, 0x7f0100ea, 0x7f0100eb, 0x7f0100ec };
-        public static final int RecyclerView_android_descendantFocusability = 1;
+        public static final int[] FontFamily = { 0x7f030075, 0x7f030076, 0x7f030077, 0x7f030078 };
+        public static final int FontFamily_fontProviderAuthority = 0;
+        public static final int FontFamily_fontProviderCerts = 1;
+        public static final int FontFamily_fontProviderPackage = 2;
+        public static final int FontFamily_fontProviderQuery = 3;
+        public static final int[] FontFamilyFont = { 0x7f030074, 0x7f030079, 0x7f03007a };
+        public static final int FontFamilyFont_font = 0;
+        public static final int FontFamilyFont_fontStyle = 1;
+        public static final int FontFamilyFont_fontWeight = 2;
+        public static final int[] RecyclerView = { 0x010100c4, 0x010100f1, 0x7f03006f, 0x7f030070, 0x7f030071, 0x7f030072, 0x7f030073, 0x7f03008b, 0x7f0300df, 0x7f0300eb, 0x7f0300f1 };
         public static final int RecyclerView_android_orientation = 0;
-        public static final int RecyclerView_fastScrollEnabled = 6;
-        public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 9;
-        public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 10;
-        public static final int RecyclerView_fastScrollVerticalThumbDrawable = 7;
-        public static final int RecyclerView_fastScrollVerticalTrackDrawable = 8;
-        public static final int RecyclerView_layoutManager = 2;
-        public static final int RecyclerView_reverseLayout = 4;
-        public static final int RecyclerView_spanCount = 3;
-        public static final int RecyclerView_stackFromEnd = 5;
+        public static final int RecyclerView_android_descendantFocusability = 1;
+        public static final int RecyclerView_fastScrollEnabled = 2;
+        public static final int RecyclerView_fastScrollHorizontalThumbDrawable = 3;
+        public static final int RecyclerView_fastScrollHorizontalTrackDrawable = 4;
+        public static final int RecyclerView_fastScrollVerticalThumbDrawable = 5;
+        public static final int RecyclerView_fastScrollVerticalTrackDrawable = 6;
+        public static final int RecyclerView_layoutManager = 7;
+        public static final int RecyclerView_reverseLayout = 8;
+        public static final int RecyclerView_spanCount = 9;
+        public static final int RecyclerView_stackFromEnd = 10;
     }
 }

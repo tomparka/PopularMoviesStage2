@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.res.Configuration;
 import android.database.Cursor;
 import android.os.AsyncTask;
+import android.os.Parcelable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -34,8 +35,9 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     private MovieAdapter myAdapter;
     private GridLayoutManager movieLayoutManager;
     private String sortByType;
+    private Bundle mSavedInstanceState;
 
-    private final String KEY_SORT_BY = "KEY_SORT_BY";
+    private final String KEY_LAYOUT_MANAGER_STATE = "KEY_LAYOUT_MANAGER_STATE";
 
     @BindView(R.id.rv_movie_posters) RecyclerView mRecyclerView;
     @BindView(R.id.tv_error_message_display) TextView mErrorMessageDisplay;
@@ -60,6 +62,8 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
 
         myAdapter = new MovieAdapter(this);
         mRecyclerView.setAdapter(myAdapter);
+
+        if (savedInstanceState != null) { mSavedInstanceState = savedInstanceState; }
     }
 
     public void loadMovieData(String apiRequestType) {
@@ -148,6 +152,11 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
                 Log.d("ONPOSTEXECUTE CALLED", "movieData length = " + movieData.length);
                 myAdapter.setMovieData(movieData);
 
+                if (mSavedInstanceState != null) {
+                    Parcelable state = mSavedInstanceState.getParcelable(KEY_LAYOUT_MANAGER_STATE);
+                    movieLayoutManager.onRestoreInstanceState(state);
+                }
+
             } else {
                 showErrorMessageView();
                 Log.d("onPostExecute", "errorMessageTriggered");
@@ -182,14 +191,23 @@ public class MainActivity extends AppCompatActivity implements MovieAdapter.Movi
     }
 
     @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putParcelable(KEY_LAYOUT_MANAGER_STATE, movieLayoutManager.onSaveInstanceState());
+    }
+
+
+    @Override
     public void onResume()
     {
+        Log.d(this.getClass().getName(), "ONRESUME CALLED.........");
         super.onResume();
         if ( sortByType != null) {
             loadMovieData(sortByType);
         } else {
             loadMovieData("MOST POPULAR");
         }
+
     }
 
 }

@@ -48,10 +48,6 @@
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
@@ -74,10 +70,6 @@
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\navigation_empty_icon.xml",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_voice_search_api_material.xml",
@@ -112,16 +104,8 @@
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable\\abc_spinner_textfield_background_material.xml"
     },
     {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_bottom_navigation_item_background.xml",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable\\design_bottom_navigation_item_background.xml"
-    },
-    {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg.xml",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable\\notification_bg.xml"
-    },
-    {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_password_eye.xml",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable\\design_password_eye.xml"
     },
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
@@ -166,9 +150,5 @@
     {
         "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "C:\\Users\\tp293\\.android\\build-cache\\fb2fb4c9807d559f041dc1d5b0213cf3d1c85dfd\\output\\res\\drawable\\abc_seekbar_thumb_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\tp293\\OneDrive\\Documents\\Udacity\\01 - Projects\\PopularMoviesS02\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "C:\\Users\\tp293\\.android\\build-cache\\b27d515c93876c62bb2e3f87909e744c0e103459\\output\\res\\drawable\\design_fab_background.xml"
     }
 ]

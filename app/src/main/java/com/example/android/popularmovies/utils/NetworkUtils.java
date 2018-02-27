@@ -21,7 +21,7 @@ public final class NetworkUtils {
     private static final String TAG = NetworkUtils.class.getSimpleName();
 
     private static final String MOVIE_BASE_URL = "http://api.themoviedb.org/3/movie";
-    private static final String API_KEY = ""; //TODO: ENTER MOVIEDB APIKEY HERE
+    private static final String API_KEY = "5dcdda15143ebee7dd69811802e5057d"; //TODO: ENTER MOVIEDB APIKEY HERE
 
     /* The format we want our API to return */
     private static final String sortByRatTrigger = "HIGHEST RATED";

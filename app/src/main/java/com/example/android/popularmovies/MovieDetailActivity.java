@@ -16,7 +16,9 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,16 +29,24 @@ import com.squareup.picasso.Picasso;
 
 import java.net.URL;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MovieDetailActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private String[] mMovieArray;
+    @BindView(R.id.detail_scroll_view) ScrollView scrollView;
+    @BindView(R.id.pb_loading_indicator) ProgressBar mProgressBar;
 
-    private ProgressBar mProgressBar;
-    private ImageView mPosterImage;
-    private TextView mMovieTitle;
-    private TextView mMovieReleaseDate;
-    private TextView mMovieRating;
-    private TextView mMoviePlot;
+    @BindView(R.id.detail_poster)ImageView mPosterImage;
+    @BindView(R.id.detail_title)TextView mMovieTitle;
+    @BindView(R.id.detail_release_date)TextView mMovieReleaseDate;
+    @BindView(R.id.detail_rating)TextView mMovieRating;
+    @BindView(R.id.detail_plot)TextView mMoviePlot;
+
+    public final String KEY_SCROLL_STATE = "KEY_SCROLL_STATE";
+
+    private String[] mMovieArray;
+    private Bundle mSavedInstanceState;
     private String mPosterImageUrl;
     private String mMovieId;
 
@@ -47,19 +57,11 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie_detail);
+        ButterKnife.bind(this);
         Log.d("MovieDetailActivity", "OnCreate method called ......." );
-        
-        mProgressBar = (ProgressBar) findViewById(R.id.pb_loading_indicator);
-
-        mPosterImage = (ImageView) findViewById(R.id.detail_poster);
-        mMovieTitle = (TextView) findViewById(R.id.detail_title);
-        mMovieReleaseDate = (TextView) findViewById(R.id.detail_release_date);
-        mMovieRating = (TextView) findViewById(R.id.detail_rating);
-        mMoviePlot = (TextView) findViewById(R.id.detail_plot);
+        if (savedInstanceState != null) { mSavedInstanceState = savedInstanceState; }
 
         Intent intentThatStartedThisActivity = getIntent();
-        Log.d("MOVIE DETAIL ACTIVITY", "SAVEINSTANCESTATE IS NULL = " + (savedInstanceState == null));
-
         if (intentThatStartedThisActivity != null) {
             if (intentThatStartedThisActivity.hasExtra(Intent.EXTRA_TEXT)) {
                 Log.d("MOVIE DETAIL ACTIVITY", "INTENT WAS USED TO POPULATE DATA.........");
@@ -75,20 +77,6 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
                 mMovieId = mMovieArray[5];
             }
         }
-
-//        else if (savedInstanceState != null) {
-//            Log.d("MOVIE DETAIL ACTIVITY", "ONSAVEINSTANCESTATE WAS USED TO POPULATE DATA");
-//            mMovieArray = savedInstanceState.getStringArray(KEY_MOVIE_ARRAY_DATA);
-//
-//            mMovieTitle.setText(mMovieArray[0]);
-//            mMovieReleaseDate.setText(mMovieArray[1]);
-//            mMovieRating.setText(mMovieArray[2]);
-//            mPosterImageUrl = mMovieArray[3];
-//            Picasso.with(this).load(mPosterImageUrl).into(mPosterImage);
-//            mMoviePlot.setText(mMovieArray[4]);
-//            mMovieId = mMovieArray[5];
-//
-//        }
 
         new MovieTrailerTask().execute("VIDEOS");
     }
@@ -158,6 +146,11 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
                 addTrailersToLayout(movieTrailerData);
                 Log.d("ONPOSTEXECUTE CALLED", "movieData length = " + movieTrailerData.length);
 
+                if (mSavedInstanceState != null) {
+                    int[] state = mSavedInstanceState.getIntArray(KEY_SCROLL_STATE);
+                    scrollView.scrollTo(state[0], state[1]);
+                }
+
             } else {
                 Log.d("onPostExecute", "errorMessageTriggered");
             }
@@ -216,10 +209,10 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
         }
     }
 
-//    @Override
-//    public void onSaveInstanceState(Bundle savedInstanceState) {
-//        Log.d("MOVIE DETAIL ACTIVITY", "ONSAVEINSTANCESTATE CALLED...........");
-//        savedInstanceState.putStringArray(KEY_MOVIE_ARRAY_DATA, mMovieArray);
-//        super.onSaveInstanceState(savedInstanceState);
-//    }
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        Log.d("MOVIE DETAIL ACTIVITY", "ONSAVEINSTANCESTATE CALLED...........");
+        savedInstanceState.putIntArray(KEY_SCROLL_STATE , new int[]{scrollView.getScrollX(), scrollView.getScrollY()});
+    }
+
 }
