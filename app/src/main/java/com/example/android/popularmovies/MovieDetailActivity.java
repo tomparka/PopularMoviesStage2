@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.os.AsyncTask;
+import android.os.Handler;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -147,8 +148,14 @@ public class MovieDetailActivity extends AppCompatActivity implements View.OnCli
                 Log.d("ONPOSTEXECUTE CALLED", "movieData length = " + movieTrailerData.length);
 
                 if (mSavedInstanceState != null) {
-                    int[] state = mSavedInstanceState.getIntArray(KEY_SCROLL_STATE);
-                    scrollView.scrollTo(state[0], state[1]);
+                    final Handler handler = new Handler();
+                    handler.postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            int[] state = mSavedInstanceState.getIntArray(KEY_SCROLL_STATE);
+                            scrollView.scrollTo(state[0], state[1]);
+                        }
+                    }, 100);
                 }
 
             } else {
